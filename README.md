@@ -2,6 +2,19 @@
 
 Create a scalable Azure Policy initiative that prevents or remediates high-risk configuration drift.
 
+## Project metadata
+
+The metadata below is derived from tracked source, manifests, and infrastructure
+files. It describes what this repository includes; live-service integration remains
+bounded by the documented deployment and validation limitations.
+
+| Category | Included |
+| --- | --- |
+| Platforms | Microsoft Azure; GitHub Actions |
+| Services and stack | Azure Policy; Management Groups; Bicep; GitHub Actions; Resource Graph |
+| Languages and formats | Python; Bicep; Bicep parameters; Bash; JSON; YAML |
+| Delivery and IaC | Bicep + `.bicepparam`; GitHub Actions CI; YAML configuration; Python validation/tests |
+
 ## Problem statement
 
 A management-group policy promotion request is checked for tenant, approved target, evidence freshness, private defaults, and deterministic rollback evidence before assignment.
